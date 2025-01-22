@@ -1,0 +1,70 @@
+/* Main container for the coming soon website */
+.coming-soon-container {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+    animation: pulse 1.5s infinite;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #d1d1d1;
+    margin-bottom: 30px;
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2c97ea;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px rgba(44, 151, 234, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1a6fb3;
+    box-shadow: 0px 15px 20px rgba(26, 111, 179, 0.6);
+    transform: translateY(-5px);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+      text-shadow: 0px 0px 40px rgba(255, 255, 255, 1);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
